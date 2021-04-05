@@ -36,7 +36,7 @@ s4d.client.on('raw', async (packet) => {
         s4d.client.emit(packet.t, guild, channel, message, member, packet.d.emoji.name);
     }
 });
-s4d.client.login('ODI4MzYzODU4MzIxNjA0NjA5.YGof9g.XnZ84FqpN7BLWOFZwefsASWOQNo').catch((e) => {
+s4d.client.login('TOKEN').catch((e) => {
     s4d.tokenInvalid = true;
     s4d.tokenError = e;
 });
